@@ -10,7 +10,7 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -28,6 +28,6 @@ jobs:
 
       # Optional: Add HTML validation step
       - name: Validate HTML Syntax
-        uses: chrislennon/action-htmlhint@v1
+        uses: validator/validator-action@v3
         with:
           files: "index.html"
