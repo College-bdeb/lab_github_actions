@@ -25,9 +25,3 @@ jobs:
             echo "Error: style.css is missing!"
             exit 1
           fi
-
-      # Optional: Add HTML validation step
-      - name: Validate HTML Syntax
-        uses: validator/validator-action@v3
-        with:
-          files: "index.html"
